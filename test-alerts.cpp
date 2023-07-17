@@ -21,6 +21,7 @@ TEST_CASE("check And Alert")
 {
   checkAndAlert(TO_CONTROLLER, {HI_ACTIVE_COOLING, 0}, 46);
   checkAndAlert(TO_EMAIL, {HI_ACTIVE_COOLING, 0}, 46);
+  checkAndAlert(TO_EMAIL, {MED_ACTIVE_COOLING, 0}, 46);
 }
 
 TEST_CASE("send To Controller")
