@@ -32,5 +32,6 @@ TEST_CASE("send To Email")
 {
   sendToEmail(TOO_HIGH);
   sendToEmail(TOO_LOW);
+  sendToEmail(NORMAL);
 }
 
