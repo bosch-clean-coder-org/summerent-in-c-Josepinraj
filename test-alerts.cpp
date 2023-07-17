@@ -18,8 +18,8 @@ TEST_CASE("classify Temperature Breach")
 
 TEST_CASE("check And Alert")
 {
-  REQUIRE(checkAndAlert(TO_CONTROLLER, HI_ACTIVE_COOLING, 0, 46));
-  REQUIRE(checkAndAlert(TO_EMAIL, HI_ACTIVE_COOLING, 0, 46));
+  REQUIRE(checkAndAlert(TO_CONTROLLER, {HI_ACTIVE_COOLING, 0}, 46));
+  REQUIRE(checkAndAlert(TO_EMAIL, {HI_ACTIVE_COOLING, 0}, 46));
 //  REQUIRE(checkAndAlert(2, HI_ACTIVE_COOLING, 0, 46));
 }
 
